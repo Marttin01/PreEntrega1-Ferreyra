@@ -1,0 +1,42 @@
+[
+ {
+  "id": "13b0d9b3-6691-4e39-984f-02f200c2bcc1",
+  "title": "silla-gamer-01",
+  "description": "para jugar y sentarse",
+  "code": "silla-gamer-01",
+  "status": "true",
+  "stock": "20",
+  "category": "silla-gamer",
+  "thumbnail": "img/silla-gamer.jpg"
+ },
+ {
+  "id": "210f7836-5d38-4c4a-8978-084d0bc5df47",
+  "title": "silla-rustica-01",
+  "description": "para almorzar en familia",
+  "code": "silla-rustica-01",
+  "status": "true",
+  "stock": "18",
+  "category": "silla-rustica",
+  "thumbnail": "img/silla-rustica.jpg"
+ },
+ {
+  "id": "e4ebd754-3fd5-4440-9edb-1e4bf26c3a78",
+  "title": "silla-oficina-01",
+  "description": "para trabajar comodamente",
+  "code": "silla-oficina-01",
+  "status": "true",
+  "stock": "14",
+  "category": "silla-oficina",
+  "thumbnail": "img/silla-oficina.jpg"
+ },
+ {
+  "id": "445d9663-06b7-46ea-b418-96c92e97519b",
+  "title": "sillon-01",
+  "description": "para relajarse",
+  "code": "sillon-01",
+  "status": "true",
+  "stock": "10",
+  "category": "sillones",
+  "thumbnail": "img/sillon-01.jpg"
+ }
+]
