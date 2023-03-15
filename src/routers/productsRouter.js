@@ -48,14 +48,14 @@ productsRouter.put('/:pid', async (req,res) => {
             ...req.body
         })
     } catch (error) {
-        res.status(404).json(message)   
+        res.status(404).json({error:'No encontrado'})   
     }
     let replaceProduct
     try {
         replaceProduct = await pm.editProduct(req.params.pid, newProduct)
         res.json(replaceProduct)
     } catch (error) {
-        res.status(404).json(message)
+        res.status(404).json({error:'No encontrado'})
     }
 })
 
@@ -64,6 +64,6 @@ productsRouter.delete('/:pid', async (req,res) => {
         const product = await pm.deleteProductById(req.params.pid)
         res.json(product)
     } catch (error) {
-        res.status(404).json(message)
+        res.status(404).json({error:'No encontrado'})
     }
 })
