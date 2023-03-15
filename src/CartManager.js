@@ -43,23 +43,25 @@ export class CartManager {
         return exist.products
     }
 
-    async addProductCart ({cartId,productId}) {
+    async addProductCart (cartId,productId) {
         await this.read()
-        let index = this.carts.findIndex((c) => c.id === cartId)
-        if(index === -1) {
+        let index =  this.carts.findIndex((c) => c.id === cartId)
+        if(index === -1 || index === undefined) {
             throw new Error('Carrito no encontrado')
         }
 
         
-        let exist = this.carts[index].products.find(p => p.id === productId)
-        if(exist){
-            this.carts[index].products.quantity++
+        let exist = this.carts[index].products.findIndex(p => p.product === productId)
+        if(exist !== -1){
+            this.carts[index].products[exist].quantity += 1;
         }else {
             let productCart = {product:productId,quantity:1}
             this.carts[index].products.push(productCart)
         }
-
+        
         await this.write()
+        
+
     }
     
     
